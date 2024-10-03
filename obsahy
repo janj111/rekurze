@@ -1,0 +1,9 @@
+def obsah_obdelniku():
+    a = int(input("Zadej velikost strany a b cm :"))
+    b = int(input("Zadej velikost strany b v cm :"))
+    if a > 0 and b > 0:
+        obsah = a * b
+        print(f"Obsah odelniku o stranach {a} a {b} je {obsah}")
+    else:
+        obsah_obdelniku()
+obsah_obdelniku()
